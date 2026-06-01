@@ -2,19 +2,22 @@
 
 int main(void){
     
-    char arr[11] = {}; 
+    char arr[10] = {}; 
+    char *p = nullptr, *q = nullptr;
+    
+    for(p = arr; p < arr + 10; p++){
+        scanf("%c", p);
+    }
 
-    scanf("%10s", arr);//최대 10자까
-
-    char max_char = arr[0]; // 가장 많이 나타난 문자
+    char max_char = *ptr; // 가장 많이 나타난 문자
     int max_count = 0;      // 빈도 수
     
     
-    for (char *p = arr; p < arr + 10; p++) { // 기존 문자
+    for (p = arr; p < arr + 10; p++) { // 기존 문자
     
         int current_count = 0; // 기존 문자와 같은 문자 개수 count
         
-        for (char *q = arr; q < arr + 10; q++) { 
+        for (q = arr; q < arr + 10; q++) { 
             if (*p == *q) {
                 current_count++;
             }
