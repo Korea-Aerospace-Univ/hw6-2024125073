@@ -3,13 +3,13 @@
 int main(void){
     
     char arr[10] = {}; 
-    char *p = nullptr, *q = nullptr;
+    char *p = nullptr,*q = nullptr ;
     
     for(p = arr; p < arr + 10; p++){
         scanf("%c", p);
     }
 
-    char max_char = *ptr; // 가장 많이 나타난 문자
+    char max_char = *p; // 가장 많이 나타난 문자
     int max_count = 0;      // 빈도 수
     
     
